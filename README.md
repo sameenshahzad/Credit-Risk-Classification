@@ -1,5 +1,15 @@
 # Credit-Risk-Classification
 
+## Background
+In this challenge, I used various techniques to train and evaluate a model based on loan risk. I used a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers
+
+The analysis was performed in the following subsections:
+
+* Split the Data into Training and Testing Sets
+* Create a Logistic Regression Model with the Original Data
+* Predict a Logistic Regression Model with Resampled Training Data
+
+
 ## Overview of the Analysis
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
