@@ -12,7 +12,15 @@ The analysis was performed in the following subsections:
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+The purpose of this analysis is to use Machine Learning to analyze a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers
+
+Under this analysis, we will predict which loans are healthy (low-risk) or non-healthy (high-risk) based on the loan status provided by the lending company.
+
+Taking a look at the data, I first split the data into Training and Testing Sets.
+
+Then using the value_counts fuction, I was able to identify that the data was highly imbalanced; more Healthy Loans [0] and less non-Healthy Loans [1]
+
+
 
 * Explain the purpose of the analysis.
 * Explain what financial information the data was on, and what you needed to predict.
