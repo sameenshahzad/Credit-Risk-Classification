@@ -16,29 +16,33 @@ The purpose of this analysis is to use Machine Learning to analyze a dataset of 
 
 Under this analysis, we will predict which loans are healthy (low-risk) or non-healthy (high-risk) based on the loan status provided by the lending company.
 
-Taking a look at the data, I first split the data into Training and Testing Sets.
+Taking a look at the dataset and using the value_counts fuction, we were able to identify that the data was highly imbalanced; more Healthy Loans [0] and less non-Healthy Loans [1]
 
-Then using the value_counts fuction, I was able to identify that the data was highly imbalanced; more Healthy Loans [0] and less non-Healthy Loans [1]
+We crteated a Logistic Regression Model with the original data (Machine Learning Morel 1) and evaluated the model's performance by: 
+- calculating the accuracy score of the model.
+- Generating a confusion matrix.
+- Printing the classification report
 
+To generate a higher accuracy score and better train the model, we used RandomOverSampler module from the imbalanced-learn library to resample the data and obtain a balanced dataset.
 
+We then created Logistic Regression Model with resampled data to fit the model (Machine Learning Morel 2) and evaluated the model's performance by: 
+- calculating the accuracy score of the model.
+- Generating a confusion matrix.
+- Printing the classification report
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
+  * Balanced Accuracy Score: 0.95
+  * Precision: the model predicted healthy loans [0] 100% of the time and predicted non-healthy loans [1] 84% of the time.
+  * Recall scores: the model made 1% of mistakes when predicting healthy loans and made 9% of mistakes when predicted non-healthy loans
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * Balanced Accuracy Score: 0.99
+  * Precision: the model predicted healthy loans [0] 100% of the time and predicted non-healthy loans [1] 85% of the time.
+  * Recall scores: the model made 1% of mistakes when predicting healthy loans and made 1% of mistakes when predicted non-healthy loans
 
 ## Summary
 
