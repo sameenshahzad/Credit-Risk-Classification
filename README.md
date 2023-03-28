@@ -50,5 +50,5 @@ We then created Logistic Regression Model with resampled data to fit the model (
 
 * Model 2 prediction are more accurate than Model 1, such that there are fewer mistakes when classifying non-healthy loans. 
 
-* Based off of this analysis, I would recommend using Model 2 (Logistic Regression Model fitted with Balanced (oversampled) data.
+* Based off of this analysis, we would recommend using Model 2 (Logistic Regression Model fitted with Balanced (oversampled) data.
 
